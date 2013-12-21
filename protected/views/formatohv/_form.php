@@ -638,7 +638,91 @@
 		<br>
 		<div class="panel panel-info" style="-webkit-box-shadow: 4px 6px 12px rgba(0,0,0,0.175); margin-top: 15px;">
 			<div class="panel-body">
-				Panel content
+				<table>
+                                        <tr>
+                                                <td>RELACIONE SU EXPERIENCIA LABORAL O DE PRESTACIÓN DE SERVICIOS EN ESTRICTO ORDEN CRONOLÓGICO COMENZANDO POR EL ACTUAL.</td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                <table>
+                                                        <tr>
+                                                                <th colspan="4"><i>EMPLEO ACTUAL O CONTRATO VIGENTE</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>EMPRESA O ENTIDAD</i><br /><input type="text" /></td>
+                                                                <td><i>PÚBLICA</i><br /><input type="text" /></td>
+                                                                <td><i>PRIVADA</i><br /><input type="text" /></td>
+                                                                <td><i>PAÍS</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>DEPARTAMENTO</i><br /><input type="text" /></td>
+                                                                <td colspan="2"><i>MUNICIPIO</i><br /><input type="text" /></td>
+                                                                <td><i>CORREO ELECTRÓNICO ENTIDAD</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>TELÉFONOS</i><br /><input type="text" /></td>
+                                                                <td colspan="2">
+                                                                        <i>FECHA DE INGRESO</i><br />
+                                                                        DÍA <input type="text" />
+                                                                        MES <input type="text" />
+                                                                        AÑO <input type="text" />
+                                                                </td>
+                                                                <td>
+                                                                        <i>FECHA DE RETIRO</i><br />
+                                                                        DÍA <input type="text" />
+                                                                        MES <input type="text" />
+                                                                        AÑO <input type="text" />
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>CARGO O CONTRATO ACTUAL</i><br /><input type="text" /></td>
+                                                                <td colspan="2"><i>DEPENDENCIA</i><br /><input type="text" /></td>
+                                                                <td><i>DIRECCIÓN</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                </table>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                <table>
+                                                        <tr>
+                                                                <th colspan="4"><i>EMPLEO O CONTRATO ANTERIOR</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>EMPRESA O ENTIDAD</i><br /><input type="text" /></td>
+                                                                <td><i>PÚBLICA</i><br /><input type="text" /></td>
+                                                                <td><i>PRIVADA</i><br /><input type="text" /></td>
+                                                                <td><i>PAÍS</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>DEPARTAMENTO</i><br /><input type="text" /></td>
+                                                                <td colspan="2"><i>MUNICIPIO</i><br /><input type="text" /></td>
+                                                                <td><i>CORREO ELECTRÓNICO ENTIDAD</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>TELÉFONOS</i><br /><input type="text" /></td>
+                                                                <td colspan="2">
+                                                                        <i>FECHA DE INGRESO</i><br />
+                                                                        DÍA <input type="text" />
+                                                                        MES <input type="text" />
+                                                                        AÑO <input type="text" />
+                                                                </td>
+                                                                <td>
+                                                                        <i>FECHA DE RETIRO</i><br />
+                                                                        DÍA <input type="text" />
+                                                                        MES <input type="text" />
+                                                                        AÑO <input type="text" />
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>CARGO O CONTRATO ACTUAL</i><br /><input type="text" /></td>
+                                                                <td colspan="2"><i>DEPENDENCIA</i><br /><input type="text" /></td>
+                                                                <td><i>DIRECCIÓN</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                </table>
+                                                </td>
+                                        </tr>
+                                </table>
 			</div>
 		</div>
 	</div>
@@ -650,7 +734,78 @@
 		<br>
 		<div class="panel panel-info" style="-webkit-box-shadow: 4px 6px 12px rgba(0,0,0,0.175); margin-top: 15px;">
 			<div class="panel-body">
-				Panel content
+				<table class="table table-bordered" style="margin-bottom: 0px;">
+					<tr>
+						<td style="padding: 0px !important;">
+							INDIQUE EL TIEMPO TOTAL DE SU EXPERIENCIA LABORAL EN NÚMERO DE AÑOS Y MESES.
+							<div class="row">
+								<div class="col-md-12">
+									<div class="panel panel-info" style="-webkit-box-shadow: 4px 6px 12px rgba(0,0,0,0.175); margin: 15px 50px;">
+										<div class="panel-heading">
+											<table class="table table-bordered" style="margin-bottom: 0px; background-color: #d9edf7; color: #222;">
+												<tr>
+													<td colspan="11" style="padding: 0px !important;">
+														<i>OCUPACIÓN</i>
+													</td>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <i>AÑOS</i>
+													</td>
+													<td style="padding: 0px !important; background-color: #fff;">
+														<i>MESES</i>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="11" style="padding: 0px !important;">
+														<i>SERVIDOR PÚBLICO</i>
+													</td>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
+													</td>
+													<td style="padding: 0px !important; background-color: #fff;">
+														<input type="text" />
+													</td>
+												</tr>
+                                                                                                <tr>
+													<td colspan="11" style="padding: 0px !important;">
+														<i>EMPLEADO DEL SECTOR PRIVADO</i>
+													</td>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
+													</td>
+													<td style="padding: 0px !important; background-color: #fff;">
+														<input type="text" />
+													</td>
+												</tr>
+                                                                                                <tr>
+													<td colspan="11" style="padding: 0px !important;">
+														<i>TRABAJADOR INDEPENDIENTE</i>
+													</td>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
+													</td>
+													<td style="padding: 0px !important; background-color: #fff;">
+														<input type="text" />
+													</td>
+												</tr>
+                                                                                                <tr>
+													<td colspan="11" style="padding: 0px !important;">
+														<i><b>TOTAL TIEMPO EXPERIENCIA</b></i>
+													</td>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
+													</td>
+													<td style="padding: 0px !important; background-color: #fff;">
+														<input type="text" />
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
@@ -662,7 +817,17 @@
 		<br>
 		<div class="panel panel-info" style="-webkit-box-shadow: 4px 6px 12px rgba(0,0,0,0.175); margin-top: 15px;">
 			<div class="panel-body">
-				Panel content
+				<table class="table table-bordered" style="margin-bottom: 0px;">
+					<tr>
+						<td style="padding: 0px !important;">
+							MANIFIESTO BAJO LA GRAVEDAD DEL JURAMENTO QUE SI NO ME ENCUENTRO DENTRO DE LAS CAUSALES DE INHABILIDAD E INCOM-PAT IBILIDAD DEL ORDEN CONSTITUCIONAL O LEGAL, PARA EJERCER CARGOS EMPLEOS PÚBLICOS O PARA CELEBRAR CONTRATOS DE PRESTA-CIÓN DE SERVICIOS CON LA ADMINISTRACIÓN PÚBLICA.<br />
+                                                        PARA TODOS LOS EFECTOS LEGALES, CERTIFICO QUE LOS DATOS POR MI ANOTADOS EN EL PRESENTE FORMATO ÚNICO DE HOJA DE VIDA, SON VERACES, (ARTÍCULO 5o. DE LA LEY 190/95).<br />
+                                                        <i>Ciudad y fecha de diligenciamiento</i><input type="text" /><br />
+                                                        <input type="text" /><br />
+                                                        <i>FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</i>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
@@ -674,7 +839,16 @@
 		<br>
 		<div class="panel panel-info" style="-webkit-box-shadow: 4px 6px 12px rgba(0,0,0,0.175); margin-top: 15px;">
 			<div class="panel-body">
-				Panel content
+				<table class="table table-bordered" style="margin-bottom: 0px;">
+					<tr>
+						<td style="padding: 0px !important;">
+                                                    <textarea></textarea><br />
+							CERTIFICO QUE LA INFORMACIÓN AQUÍ SUMINISTRADA HA SIDO CONSTATADA FRENTE A LOS DOCUMENTOS QUE HAN SIDO PRESENTADOS COMO SOPORTE.<br />
+                                                        <div><input type="text" /><br /><i>Ciudad y fecha</i></div>
+                                                        <div><input type="text" /><br /><i>NOMBRE Y FIRMA DEL JEFE DE PERSONAL O DE CONTRATOS</i></div>
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>

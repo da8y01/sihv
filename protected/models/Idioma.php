@@ -1,0 +1,150 @@
+<?php
+
+/**
+ * This is the model class for table "idioma".
+ *
+ * The followings are the available columns in table 'idioma':
+ * @property integer $id
+ * @property integer $idFormacionAcademica
+ * @property string $nombre
+ * @property string $loHabla
+ * @property string $loLee
+ * @property string $loEscribe
+ */
+class Idioma extends CActiveRecord
+{
+	private static $dboperar = NULL;
+	public static $arrayTipos = array( 'id'=>'id' ,  'idFormacionAcademica'=>'idFormacionAcademica' ,  'nombre'=>'nombre' ,  'loHabla'=>'loHabla' ,  'loLee'=>'loLee' ,  'loEscribe'=>'loEscribe'  );
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
+	 * @return Idioma the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'idioma';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('idFormacionAcademica, nombre, loHabla, loLee, loEscribe', 'required'),
+			array('idFormacionAcademica', 'numerical', 'integerOnly'=>true),
+			array('nombre', 'length', 'max'=>45),
+			array('loHabla, loLee, loEscribe', 'length', 'max'=>2),
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('id, idFormacionAcademica, nombre, loHabla, loLee, loEscribe', 'safe', 'on'=>'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+		);
+	}
+	
+	/**
+	 * @return array list "idioma".
+	 */
+	public function getListIdiomas()
+	{
+		return CHtml::listData(Idioma::model()->findAll(),'id','concate');
+	}
+	
+	/**
+	 * @return array list "idioma".
+	 */
+	public function getIdioma($id)
+	{
+		return CHtml::listData(Idioma::model()->findByPk($id),'id','concate');
+	}
+
+	public function getConcate()
+	{
+		return ( $this->id.': '.  $this->idFormacionAcademica.': '.  $this->nombre.': '.  $this->loHabla.': '.  $this->loLee.': '.  $this->loEscribe.': ' );
+	}
+	
+	public static function getListTipos($key=null)
+	{
+		if($key!=null)
+			return self::$arrayTipos[$key];
+		return self::$arrayTipos;
+	}
+	
+	/**
+	 * @return entero modelo para consultas complejas
+	 */
+	public static function getTotalIdioma($id)
+	{
+		$count = Yii::app()->db->createCommand('SELECT COUNT(me.idOferta) FROM operacion as op INNER JOIN oferta as of ON (op.id=of.idOperacion) INNER JOIN mensaje as me ON (of.id=me.idOferta) WHERE op.id =:idOperacion');
+		$count->bindParam(':idOperacion', $idOperacion, PDO::PARAM_STR);
+		$total = $count->queryScalar();
+		return $total;
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'id' => 'ID',
+			'idFormacionAcademica' => 'Id Formacion Academica',
+			'nombre' => 'Nombre',
+			'loHabla' => 'Lo Habla',
+			'loLee' => 'Lo Lee',
+			'loEscribe' => 'Lo Escribe',
+		);
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public function search()
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('id',$this->id);
+		$criteria->compare('idFormacionAcademica',$this->idFormacionAcademica);
+		$criteria->compare('nombre',$this->nombre,true);
+		$criteria->compare('loHabla',$this->loHabla,true);
+		$criteria->compare('loLee',$this->loLee,true);
+		$criteria->compare('loEscribe',$this->loEscribe,true);
+		/**
+		 * if(Yii::app()->user->checkAccess('rol_admin'))
+		 *{
+		 *	$criteria->with = array('participantes'=>array('select'=>'participantes.idTransportadoras','together'=>true));
+		 *	$criteria->compare('participantes.idTransportadoras',Yii::app()->user->getState('idTransportador'),true);
+		 *	$criteria->with = array('devolucion.prestamo.usuarioMateria');
+		 *	$criteria->compare('usuarioMateria.idUsuario',Yii::app()->user->id,true);  
+		 *}
+		 *
+		 */
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+		));
+	}
+}

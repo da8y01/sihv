@@ -123,6 +123,8 @@ class FormatohvController extends Controller
 		
 		$idioma              = new Idioma;
 		$idioma2             = new Idioma;
+                
+                $tiempoExperiencia  = new Tiempoexperiencia;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -158,6 +160,7 @@ class FormatohvController extends Controller
 				'educacionSuperior5'=>$educacionSuperior5,
 				'idioma'=>$idioma,
 				'idioma2'=>$idioma2,
+                                'tiempoExperiencia'=>$tiempoExperiencia,
 			));
 		}
 	}

@@ -23,4 +23,5 @@ if(!Yii::app()->user->isGuest){
 			'educacionSuperior5'=>$educacionSuperior5,
 			'idioma'=>$idioma,
 			'idioma2'=>$idioma2,
+                        'tiempoExperiencia'=>$tiempoExperiencia,
 	)); ?>

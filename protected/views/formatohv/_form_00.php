@@ -638,56 +638,50 @@
 		<br>
 		<div class="panel panel-info" style="-webkit-box-shadow: 4px 6px 12px rgba(0,0,0,0.175); margin-top: 15px;">
 			<div class="panel-body">
-				<table class="table table-bordered" style="margin-bottom: 0px; color: #222;">
-					<tr>
-						<td valign="middle" style="padding: 0px !important; background-color: #fff;">RELACIONE SU EXPERIENCIA LABORAL O DE PRESTACIÓN DE SERVICIOS EN ESTRICTO ORDEN CRONOLÓGICO COMENZANDO POR EL ACTUAL.</td>
-					</tr>
-					<tr>
-						<td>
-							<table>
-									<tr style="background-color: #d9edf7;">
-											<th align="center" style="text-align: center;" colspan="5"><i>EMPLEO ACTUAL O CONTRATO VIGENTE</i></th>
-									</tr>
-									<tr>
-											<td><i>EMPRESA O ENTIDAD</i><br /><input type="text" /></td>
-											<td><i>PÚBLICA</i><br /><input type="text" /></td>
-											<td><i>PRIVADA</i><br /><input type="text" /></td>
-											<td><i>PAÍS</i><br /><input type="text" /></td>
-									</tr>
-									<tr>
-											<td><i>EMPRESA O ENTIDAD</i><br /><input type="text" /></td>
-											<td><i>PÚBLICA</i><br /><input type="text" /></td>
-											<td><i>PRIVADA</i><br /><input type="text" /></td>
-											<td><i>PAÍS</i><br /><input type="text" /></td>
-									</tr>
-									<tr>
-											<td><i>DEPARTAMENTO</i><br /><input type="text" /></td>
-											<td colspan="2"><i>MUNICIPIO</i><br /><input type="text" /></td>
-											<td><i>CORREO ELECTRÓNICO ENTIDAD</i><br /><input type="text" /></td>
-									</tr>
-									<tr>
-											<td><i>TELÉFONOS</i><br /><input type="text" /></td>
-											<td colspan="2">
-													<i>FECHA DE INGRESO</i><br />
-													DÍA <input type="text" />
-													MES <input type="text" />
-													AÑO <input type="text" />
-											</td>
-											<td>
-													<i>FECHA DE RETIRO</i><br />
-													DÍA <input type="text" />
-													MES <input type="text" />
-													AÑO <input type="text" />
-											</td>
-									</tr>
-									<tr>
-											<td><i>CARGO O CONTRATO ACTUAL</i><br /><input type="text" /></td>
-											<td colspan="2"><i>DEPENDENCIA</i><br /><input type="text" /></td>
-											<td><i>DIRECCIÓN</i><br /><input type="text" /></td>
-									</tr>
-							</table>
-						</td>
-					</tr>
+				<table>
+                                        <tr>
+                                                <td>RELACIONE SU EXPERIENCIA LABORAL O DE PRESTACIÓN DE SERVICIOS EN ESTRICTO ORDEN CRONOLÓGICO COMENZANDO POR EL ACTUAL.</td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                <table>
+                                                        <tr>
+                                                                <th colspan="4"><i>EMPLEO ACTUAL O CONTRATO VIGENTE</i></th>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>EMPRESA O ENTIDAD</i><br /><input type="text" /></td>
+                                                                <td><i>PÚBLICA</i><br /><input type="text" /></td>
+                                                                <td><i>PRIVADA</i><br /><input type="text" /></td>
+                                                                <td><i>PAÍS</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>DEPARTAMENTO</i><br /><input type="text" /></td>
+                                                                <td colspan="2"><i>MUNICIPIO</i><br /><input type="text" /></td>
+                                                                <td><i>CORREO ELECTRÓNICO ENTIDAD</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>TELÉFONOS</i><br /><input type="text" /></td>
+                                                                <td colspan="2">
+                                                                        <i>FECHA DE INGRESO</i><br />
+                                                                        DÍA <input type="text" />
+                                                                        MES <input type="text" />
+                                                                        AÑO <input type="text" />
+                                                                </td>
+                                                                <td>
+                                                                        <i>FECHA DE RETIRO</i><br />
+                                                                        DÍA <input type="text" />
+                                                                        MES <input type="text" />
+                                                                        AÑO <input type="text" />
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td><i>CARGO O CONTRATO ACTUAL</i><br /><input type="text" /></td>
+                                                                <td colspan="2"><i>DEPENDENCIA</i><br /><input type="text" /></td>
+                                                                <td><i>DIRECCIÓN</i><br /><input type="text" /></td>
+                                                        </tr>
+                                                </table>
+                                                </td>
+                                        </tr>
                                         <tr>
                                                 <td>
                                                 <table>
@@ -750,63 +744,58 @@
 										<div class="panel-heading">
 											<table class="table table-bordered" style="margin-bottom: 0px; background-color: #d9edf7; color: #222;">
 												<tr>
-													<td valign="middle" rowspan="2" style="text-align:center; padding: 0px !important;">
+													<td colspan="11" style="padding: 0px !important;">
 														<i>OCUPACIÓN</i>
 													</td>
-													<td valign="middle" colspan="2" style="text-align:center; padding: 0px !important;">
-														<i>TIEMPO DE EXPERIENCIA</i>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 0px !important; background-color: #fff;">
-                                                        <i>AÑOS</i>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <i>AÑOS</i>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<i>MESES</i>
 													</td>
 												</tr>
 												<tr>
-													<td style="padding: 0px !important;">
+													<td colspan="11" style="padding: 0px !important;">
 														<i>SERVIDOR PÚBLICO</i>
 													</td>
-													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'años',array('name'=>'Tiempoexperiencia[]años','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'años'); ?>														
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[]meses','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'meses'); ?>
+														<input type="text" />
 													</td>
 												</tr>
-                                                <tr>
-													<td style="padding: 0px !important;">
+                                                                                                <tr>
+													<td colspan="11" style="padding: 0px !important;">
 														<i>EMPLEADO DEL SECTOR PRIVADO</i>
 													</td>
-													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'años',array('name'=>'Tiempoexperiencia[]años','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'años'); ?>														
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[]meses','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'meses'); ?>
+														<input type="text" />
 													</td>
 												</tr>
-                                                <tr>
-													<td style="padding: 0px !important;">
+                                                                                                <tr>
+													<td colspan="11" style="padding: 0px !important;">
 														<i>TRABAJADOR INDEPENDIENTE</i>
 													</td>
-													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'años',array('name'=>'Tiempoexperiencia[]años','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'años'); ?>														
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[]meses','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'meses'); ?>
+														<input type="text" />
 													</td>
 												</tr>
-                                                <tr>
-													<td colspan="3" style="padding: 0px !important;">
+                                                                                                <tr>
+													<td colspan="11" style="padding: 0px !important;">
 														<i><b>TOTAL TIEMPO EXPERIENCIA</b></i>
+													</td>
+													<td colspan="4" style="padding: 0px !important; background-color: #fff;">
+                                                                                                                <input type="text" />
+													</td>
+													<td style="padding: 0px !important; background-color: #fff;">
+														<input type="text" />
 													</td>
 												</tr>
 											</table>
@@ -830,51 +819,12 @@
 			<div class="panel-body">
 				<table class="table table-bordered" style="margin-bottom: 0px;">
 					<tr>
-						<td colspan="2" style="padding: 0px !important;">
-							MANIFIESTO BAJO LA GRAVEDAD DEL JURAMENTO QUE SI NO ME ENCUENTRO DENTRO DE LAS CAUSALES DE INHABILIDAD E INCOM-PAT IBILIDAD DEL ORDEN CONSTITUCIONAL O LEGAL, PARA EJERCER CARGOS EMPLEOS PÚBLICOS O PARA CELEBRAR CONTRATOS DE PRESTA-CIÓN DE SERVICIOS CON LA ADMINISTRACIÓN PÚBLICA.
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2" style="padding: 0px !important;">
-                            PARA TODOS LOS EFECTOS LEGALES, CERTIFICO QUE LOS DATOS POR MI ANOTADOS EN EL PRESENTE FORMATO ÚNICO DE HOJA DE VIDA, SON VERACES, (ARTÍCULO 5o. DE LA LEY 190/95).<br/>
-						</td>
-					</tr>
-					<tr>
-						<td style="padding: 0px !important;" width="30%">
-							<i>Ciudad y fecha de diligenciamiento</i>
-						</td>
 						<td style="padding: 0px !important;">
-								<div class="col-md-3">
-									<div class="form-group" style="margin-bottom: 0px;">
-										<?php echo $form->dropDownList($model,'idCiudadDiligenciamiento',Municipio::getListMunicipios(),array('class'=>'chosen-select-deselect form-control')); ?>
-										<?php echo $form->error($model,'idCiudadDiligenciamiento'); ?>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group" style="margin-bottom: 0px;">
-										<div class="input-group input-append ancho90px date" id="dp3" data-date="<?php echo date('d-m-Y');?>" data-date-format="dd-mm-yyyy">
-											<?php echo $form->textField($model,'fechaDiligenciamiento',array('class'=>'form-control inpmobile ancho90px','maxlength'=>45,'style'=>'padding: 0px 12px;')); ?>
-											<span class="input-group-addon add-on inpmobile2 cursito"><i class="fa fa-calendar"></i></span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td style="padding: 0px !important;" width="30%">
-							
-						</td>
-						<td colspan="2" style="padding: 0px !important;" width="70%">
-							<?php echo $form->textField($model,'firmaSerContra',array('class'=>'form-control inpmobile','maxlength'=>45)); ?>
-						</td>
-					</tr>
-					<tr>
-						<td style="padding: 0px !important;" width="30%">
-							
-						</td>
-						<td colspan="2" style="padding: 0px !important;" width="70%">
-							<i>FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</i>
+							MANIFIESTO BAJO LA GRAVEDAD DEL JURAMENTO QUE SI NO ME ENCUENTRO DENTRO DE LAS CAUSALES DE INHABILIDAD E INCOM-PAT IBILIDAD DEL ORDEN CONSTITUCIONAL O LEGAL, PARA EJERCER CARGOS EMPLEOS PÚBLICOS O PARA CELEBRAR CONTRATOS DE PRESTA-CIÓN DE SERVICIOS CON LA ADMINISTRACIÓN PÚBLICA.<br />
+                                                        PARA TODOS LOS EFECTOS LEGALES, CERTIFICO QUE LOS DATOS POR MI ANOTADOS EN EL PRESENTE FORMATO ÚNICO DE HOJA DE VIDA, SON VERACES, (ARTÍCULO 5o. DE LA LEY 190/95).<br />
+                                                        <i>Ciudad y fecha de diligenciamiento</i><input type="text" /><br />
+                                                        <input type="text" /><br />
+                                                        <i>FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</i>
 						</td>
 					</tr>
 				</table>
@@ -891,35 +841,11 @@
 			<div class="panel-body">
 				<table class="table table-bordered" style="margin-bottom: 0px;">
 					<tr>
-						<td colspan="2" style="padding: 0px !important;">
-							CERTIFICO QUE LA INFORMACIÓN AQUÍ SUMINISTRADA HA SIDO CONSTATADA FRENTE A LOS DOCUMENTOS QUE HAN SIDO PRESENTADOS COMO
-							SOPORTE.
-						</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-						</td>
-					</tr>
-					<tr>
 						<td style="padding: 0px !important;">
-								<div class="col-md-3">
-									<div class="form-group" style="margin-bottom: 0px;">
-										<?php echo $form->dropDownList($model,'idCiudadRecurHuma',Municipio::getListMunicipios(),array('class'=>'chosen-select-deselect form-control')); ?>
-										<?php echo $form->error($model,'idCiudadRecurHuma'); ?>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group" style="margin-bottom: 0px;">
-										<div class="input-group input-append ancho90px date" id="dp3" data-date="<?php echo date('d-m-Y');?>" data-date-format="dd-mm-yyyy">
-											<?php echo $form->textField($model,'fechaRecurHuma',array('class'=>'form-control inpmobile ancho90px','maxlength'=>45,'style'=>'padding: 0px 12px;')); ?>
-											<span class="input-group-addon add-on inpmobile2 cursito"><i class="fa fa-calendar"></i></span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</td>
-						<td style="padding: 0px !important;">
-							
+                                                    <textarea></textarea><br />
+							CERTIFICO QUE LA INFORMACIÓN AQUÍ SUMINISTRADA HA SIDO CONSTATADA FRENTE A LOS DOCUMENTOS QUE HAN SIDO PRESENTADOS COMO SOPORTE.<br />
+                                                        <div><input type="text" /><br /><i>Ciudad y fecha</i></div>
+                                                        <div><input type="text" /><br /><i>NOMBRE Y FIRMA DEL JEFE DE PERSONAL O DE CONTRATOS</i></div>
 						</td>
 					</tr>
 				</table>
@@ -927,6 +853,24 @@
 		</div>
 	</div>
 </div>
+
+
+	<?php echo $form->textFieldRow($model,'idUsuario',array('class'=>'form-control')); ?>
+
+	<?php echo $form->textFieldRow($model,'idCiudadDiligenciamiento',array('class'=>'form-control')); ?>
+
+	<?php echo $form->textFieldRow($model,'idCiudadRecurHuma',array('class'=>'form-control')); ?>
+
+	
+
+	<?php echo $form->textFieldRow($model,'fechaDiligenciamiento',array('class'=>'form-control')); ?>
+
+	<?php echo $form->textFieldRow($model,'firmaSerContra',array('class'=>'form-control','maxlength'=>45)); ?>
+
+	<?php echo $form->textFieldRow($model,'observaRecurHuma',array('class'=>'form-control','maxlength'=>45)); ?>
+
+	<?php echo $form->textFieldRow($model,'fechaRecurHuma',array('class'=>'form-control','maxlength'=>45)); ?>
+
 	<div class="form-group">
 		<?php $this->widget('bootstrap.widgets.TbButton', array(
 			'buttonType'=>'submit',
@@ -946,13 +890,7 @@
             radioClass: 'iradio_flat-green'
         });
         //======================iCheck===================
-		
-		$(".date").datepicker()
-				.on("changeDate", function(ev){
-				//$(".date").datepicker("hide");
-				$(this).find("input").focus();
-		});
-		
+	
 		$('.chosen-select').chosen({search_contains: true });
 		$('.chosen-select-deselect').chosen({ allow_single_deselect: true, search_contains: true });
 		

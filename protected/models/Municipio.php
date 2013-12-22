@@ -61,7 +61,7 @@ class Municipio extends CActiveRecord
 	/**
 	 * @return array list "municipio".
 	 */
-	public function getListMunicipios()
+	public static function getListMunicipios()
 	{
 		return CHtml::listData(Municipio::model()->findAll(),'id','concate');
 	}

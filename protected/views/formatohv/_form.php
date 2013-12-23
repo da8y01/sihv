@@ -770,11 +770,11 @@
 														<i>SERVIDOR PÚBLICO</i>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'años',array('name'=>'Tiempoexperiencia[]años','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'años'); ?>														
+														<?php echo $form->textField($tiempoExperiencia,'years',array('name'=>'Tiempoexperiencia[years]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->error($tiempoExperiencia,'years'); ?>														
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[]meses','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[meses]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
 														<?php echo $form->error($tiempoExperiencia,'meses'); ?>
 													</td>
 												</tr>
@@ -783,11 +783,11 @@
 														<i>EMPLEADO DEL SECTOR PRIVADO</i>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'años',array('name'=>'Tiempoexperiencia[]años','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'años'); ?>														
+														<?php echo $form->textField($tiempoExperiencia,'years',array('name'=>'Tiempoexperiencia[years]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->error($tiempoExperiencia,'years'); ?>														
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[]meses','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[meses]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
 														<?php echo $form->error($tiempoExperiencia,'meses'); ?>
 													</td>
 												</tr>
@@ -796,11 +796,11 @@
 														<i>TRABAJADOR INDEPENDIENTE</i>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'años',array('name'=>'Tiempoexperiencia[]años','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
-														<?php echo $form->error($tiempoExperiencia,'años'); ?>														
+														<?php echo $form->textField($tiempoExperiencia,'years',array('name'=>'Tiempoexperiencia[years]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->error($tiempoExperiencia,'years'); ?>														
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[]meses','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->textField($tiempoExperiencia,'meses',array('name'=>'Tiempoexperiencia[meses]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
 														<?php echo $form->error($tiempoExperiencia,'meses'); ?>
 													</td>
 												</tr>

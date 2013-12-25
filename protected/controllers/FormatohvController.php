@@ -28,7 +28,7 @@ class FormatohvController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('viewPublic','create'),
+				'actions'=>array('viewPublic','create', 'index','view','update','admin','delete'),
 				'users'=>array('*'),
 			),
 			array('allow',  // allow all users to perform 'index' and 'view' actions
@@ -128,11 +128,61 @@ class FormatohvController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+                
 		if(isset($_POST['Formatohv']))
 		{
 			$model->attributes=$_POST['Formatohv'];
 			if($model->save()){
+                                $model->refresh();
+                                if(isset($_POST['Datospersonales']))
+                                {
+                                    $datosPersonales->attributes=$_POST['Datospersonales'];
+                                    $datosPersonales->idFormatoHV = $model->id;
+                                    $datosPersonales->idDepartamento = 1;
+                                    $datosPersonales->idMunicipio = 1;
+                                    $datosPersonales->fechaNacimiento = '1980-01-01';
+                                    $datosPersonales->save();
+                                }
+                                
+                                if(isset($_POST['Formacionacademica']))
+                                {
+                                    $formacionAcademica->attributes=$_POST['Formacionacademica'];
+                                    $formacionAcademica->idFormatoHV = $model->id;
+                                    $formacionAcademica->educacionBasica = '11';
+                                    if($formacionAcademica->save())
+                                    {
+                                        $formacionAcademica->refresh();
+                                        if(isset($_POST['Educacionsuperior']))
+                                        {
+                                            $educacionSuperior->attributes=$_POST['Educacionsuperior'];
+                                            $educacionSuperior->idFormacionAcademica = $formacionAcademica->id;
+                                            $formacionAcademica->save();
+                                        }
+                                        
+                                        if(isset($_POST['Idioma']))
+                                        {
+                                            $idioma->attributes=$_POST['Idioma'];
+                                            $idioma->idFormacionAcademica = $formacionAcademica->id;
+                                            $idioma->save();
+                                        }
+                                        if(isset($_POST['Idioma2']))
+                                        {
+                                            $idioma2->attributes=$_POST['Idioma2'];
+                                            $idioma2->idFormacionAcademica = $formacionAcademica->id;
+                                            $idioma2->save();
+                                        }
+                                    }
+                                }
+                                
+                                if(isset($_POST['Tiempoexperiencia']))
+                                {
+                                    $tiempoExperiencia->attributes=$_POST['Tiempoexperiencia'];
+                                    $tiempoExperiencia->idFormatoHV = $model->id;
+                                    $tiempoExperiencia->ocupacion = 'ocupacion hardcoded';
+                                    $tiempoExperiencia->save();
+                                }
+                                
+                                
 				if(Yii::app()->request->isAjaxRequest){
 					echo (1)."---".$model->id;
 					Yii::app()->end();
@@ -142,7 +192,7 @@ class FormatohvController extends Controller
 				}
 			}
 		}
-		
+                
 		if(Yii::app()->request->isAjaxRequest){
 			$this->renderPartial('create',array(
 				'model'=>$model,

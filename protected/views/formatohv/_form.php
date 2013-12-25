@@ -435,7 +435,7 @@
 										$html1 .='<tr fila="'.$i.'">
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-12">
-															<select class="chosen-select-deselect form-control" name="Educacionsuperior[modalidad][]" id="Educacionsuperior_modalidad">
+															<select class="chosen-select-deselect form-control" name="Educacionsuperior[modalidad]" id="Educacionsuperior_modalidad">
 																<option value=""></option>
 																<option value="TC">TC</option>
 																<option value="TL">TL</option>
@@ -451,13 +451,13 @@
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-4">
-															<input class="form-control inpmobile" maxlength="2" style="padding: 0px 12px;" name="Educacionsuperior[semestresAprobados][]" id="Educacionsuperior_semestresAprobados" type="text">
+															<input class="form-control inpmobile" maxlength="2" style="padding: 0px 12px;" name="Educacionsuperior[semestresAprobados]" id="Educacionsuperior_semestresAprobados" type="text">
 														</div>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-4">
 															<div class="btn-group btnsTipoGra">
-																<input value="" name="Educacionsuperior[graduado][]" id="Educacionsuperior_graduado_'.$i.'" type="hidden">
+																<input value="" name="Educacionsuperior[graduado]" id="Educacionsuperior_graduado_'.$i.'" type="hidden">
 																<i val="Si" index="'.$i.'" select="" class="fa fa-circle-o fa-lg cursito graduado"></i>
 															</div>
 														</div>
@@ -471,22 +471,22 @@
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-12">
-															<input class="form-control inpmobile" maxlength="45" style="padding: 0px 12px;" name="Educacionsuperior[tituloObtenido][]" id="Educacionsuperior_tituloObtenido" type="text">
+															<input class="form-control inpmobile" maxlength="45" style="padding: 0px 12px;" name="Educacionsuperior[tituloObtenido]" id="Educacionsuperior_tituloObtenido" type="text">
 														</div>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-5">
-															<input class="form-control inpmobile" maxlength="2" style="padding: 0px 12px;" name="Educacionsuperior[mesTerminacion][]" id="Educacionsuperior_mesTerminacion" type="text">
+															<input class="form-control inpmobile" maxlength="2" style="padding: 0px 12px;" name="Educacionsuperior[mesTerminacion]" id="Educacionsuperior_mesTerminacion" type="text">
 														</div>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-6">
-															<input class="form-control inpmobile" maxlength="4" style="padding: 0px 12px;" name="Educacionsuperior[anioTerminacion][]" id="Educacionsuperior_anioTerminacion" type="text">
+															<input class="form-control inpmobile" maxlength="4" style="padding: 0px 12px;" name="Educacionsuperior[anioTerminacion]" id="Educacionsuperior_anioTerminacion" type="text">
 														</div>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;">
 														<div class="col-md-12">
-															<input class="form-control inpmobile" maxlength="4" style="padding: 0px 12px;" name="Educacionsuperior[tarjetaProfesional][]" id="Educacionsuperior_tarjetaProfesional" type="text">
+															<input class="form-control inpmobile" maxlength="4" style="padding: 0px 12px;" name="Educacionsuperior[tarjetaProfesional]" id="Educacionsuperior_tarjetaProfesional" type="text">
 														</div>
 													</td>
 												</tr>';
@@ -549,73 +549,73 @@
 												</tr>
 												<tr>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($idioma,'nombre',array('name'=>'Idioma[]nombre','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->textField($idioma,'nombre',array('name'=>'Idioma[nombre]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
 														<?php echo $form->error($idioma,'nombre'); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loHabla',array('name'=>'Idioma[]loHabla','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loHabla',array('name'=>'Idioma[loHabla]','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loHabla',array('name'=>'Idioma[]loHabla','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loHabla',array('name'=>'Idioma[loHabla]','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loHabla',array('name'=>'Idioma[]loHabla','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loHabla',array('name'=>'Idioma[loHabla]','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 														<?php echo $form->error($idioma,'loHabla'); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loLee',array('name'=>'Idioma[]loLee','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loLee',array('name'=>'Idioma[loLee]','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loLee',array('name'=>'Idioma[]loLee','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loLee',array('name'=>'Idioma[loLee]','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loLee',array('name'=>'Idioma[]loLee','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loLee',array('name'=>'Idioma[loLee]','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 														<?php echo $form->error($idioma,'loLee'); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loEscribe',array('name'=>'Idioma[]loEscribe','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loEscribe',array('name'=>'Idioma[loEscribe]','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loEscribe',array('name'=>'Idioma[]loEscribe','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loEscribe',array('name'=>'Idioma[loEscribe]','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma,'loEscribe',array('name'=>'Idioma[]loEscribe','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma,'loEscribe',array('name'=>'Idioma[loEscribe]','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 														<?php echo $form->error($idioma,'loEscribe'); ?>
 													</td>
 												</tr>
 												<tr>
 													<td style="padding: 0px !important; background-color: #fff;">
-														<?php echo $form->textField($idioma2,'nombre',array('name'=>'Idioma[]nombre','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
+														<?php echo $form->textField($idioma2,'nombre',array('name'=>'Idioma2[nombre]','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px;')); ?>
 														<?php echo $form->error($idioma2,'nombre'); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loHabla',array('name'=>'Idioma[]loHabla','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loHabla',array('name'=>'Idioma2[loHabla]','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loHabla',array('name'=>'Idioma[]loHabla','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loHabla',array('name'=>'Idioma2[loHabla]','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loHabla',array('name'=>'Idioma[]loHabla','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loHabla',array('name'=>'Idioma2[loHabla]','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 														<?php echo $form->error($idioma2,'loHabla'); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loLee',array('name'=>'Idioma[]loLee','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loLee',array('name'=>'Idioma2[loLee]','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loLee',array('name'=>'Idioma[]loLee','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loLee',array('name'=>'Idioma2[loLee]','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loLee',array('name'=>'Idioma[]loLee','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loLee',array('name'=>'Idioma2[loLee]','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 														<?php echo $form->error($idioma2,'loLee'); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loEscribe',array('name'=>'Idioma[]loEscribe','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loEscribe',array('name'=>'Idioma2[loEscribe]','value'=>'R','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loEscribe',array('name'=>'Idioma[]loEscribe','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loEscribe',array('name'=>'Idioma2[loEscribe]','value'=>'B','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 													</td>
 													<td style="padding: 0px !important; background-color: #fff;" class="radio_flat_status">
-														<?php echo $form->radioButton($idioma2,'loEscribe',array('name'=>'Idioma[]loEscribe','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
+														<?php echo $form->radioButton($idioma2,'loEscribe',array('name'=>'Idioma2[loEscribe]','value'=>'MB','class'=>'form-control inpmobile','maxlength'=>4,'style'=>'padding: 0px 12px; vertical-align: middle; text-align: -webkit-center;')); ?>
 														<?php echo $form->error($idioma2,'loEscribe'); ?>
 													</td>
 												</tr>

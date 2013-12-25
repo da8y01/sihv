@@ -7,13 +7,13 @@
  * @property integer $id
  * @property integer $idFormatoHV
  * @property string $ocupacion
- * @property integer $años
+ * @property integer $years
  * @property integer $meses
  */
 class Tiempoexperiencia extends CActiveRecord
 {
 	private static $dboperar = NULL;
-	public static $arrayTipos = array( 'id'=>'id' ,  'idFormatoHV'=>'idFormatoHV' ,  'ocupacion'=>'ocupacion' ,  'años'=>'años' ,  'meses'=>'meses'  );
+	public static $arrayTipos = array( 'id'=>'id' ,  'idFormatoHV'=>'idFormatoHV' ,  'ocupacion'=>'ocupacion' ,  'years'=>'years' ,  'meses'=>'meses'  );
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -40,12 +40,12 @@ class Tiempoexperiencia extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idFormatoHV, ocupacion, años, meses', 'required'),
-			array('idFormatoHV, años, meses', 'numerical', 'integerOnly'=>true),
+			array('idFormatoHV, ocupacion, years, meses', 'required'),
+			array('idFormatoHV, years, meses', 'numerical', 'integerOnly'=>true),
 			array('ocupacion', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, idFormatoHV, ocupacion, años, meses', 'safe', 'on'=>'search'),
+			array('id, idFormatoHV, ocupacion, years, meses', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,7 +78,7 @@ class Tiempoexperiencia extends CActiveRecord
 
 	public function getConcate()
 	{
-		return ( $this->id.': '.  $this->idFormatoHV.': '.  $this->ocupacion.': '.  $this->años.': '.  $this->meses.': ' );
+		return ( $this->id.': '.  $this->idFormatoHV.': '.  $this->ocupacion.': '.  $this->years.': '.  $this->meses.': ' );
 	}
 	
 	public static function getListTipos($key=null)
@@ -108,7 +108,7 @@ class Tiempoexperiencia extends CActiveRecord
 			'id' => 'ID',
 			'idFormatoHV' => 'Id Formato Hv',
 			'ocupacion' => 'Ocupacion',
-			'años' => 'Años',
+			'years' => 'Años',
 			'meses' => 'Meses',
 		);
 	}
@@ -127,7 +127,7 @@ class Tiempoexperiencia extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('idFormatoHV',$this->idFormatoHV);
 		$criteria->compare('ocupacion',$this->ocupacion,true);
-		$criteria->compare('años',$this->años);
+		$criteria->compare('years',$this->years);
 		$criteria->compare('meses',$this->meses);
 		/**
 		 * if(Yii::app()->user->checkAccess('rol_admin'))
